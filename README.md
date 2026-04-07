@@ -22,7 +22,7 @@ Configured as a VS Code Dev Container so you can start developing Fortran right 
 
 ```bash
 git clone <repository-url>
-cd devcontainer_modernfortran_with_fpm
+cd modernfortran-devcontainer-with-fpm
 ```
 
 ### Contributing to another's repository
@@ -31,7 +31,7 @@ cd devcontainer_modernfortran_with_fpm
 2. Clone your forked repository
    ```bash
    git clone <your-fork-url>
-   cd devcontainer-modernfortran-with-fpm
+   cd modernfortran-devcontainer-with-fpm
    ```
 3. Add the upstream repository as a remote
    ```bash
