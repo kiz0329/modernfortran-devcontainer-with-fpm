@@ -18,17 +18,6 @@ Configured as a VS Code Dev Container so you can start developing Fortran right 
 
 ## Setup
 
-### Getting started
-
-Clone this repository:
-
-```bash
-git clone https://github.com/kiz0329/modernfortran-devcontainer-with-fpm.git
-cd modernfortran-devcontainer-with-fpm
-```
-
-### Contributing to this repository
-
 1. **Fork** this repository on GitHub
 2. Clone your forked repository
    ```bash
@@ -39,11 +28,8 @@ cd modernfortran-devcontainer-with-fpm
    ```bash
    git remote add upstream https://github.com/kiz0329/modernfortran-devcontainer-with-fpm.git
    ```
-
-### Starting the Dev Container
-
-1. Open the folder in VS Code and select "Reopen in Container"
-2. Once the container build completes, the development environment is ready to use
+4. Open the folder in VS Code and select "Reopen in Container"
+5. Once the container build completes, the development environment is ready to use
 
 ## Usage
 
