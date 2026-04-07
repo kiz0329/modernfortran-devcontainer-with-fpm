@@ -8,7 +8,7 @@ Configured as a VS Code Dev Container so you can start developing Fortran right 
 | Tool | Version |
 |------|---------|
 | gfortran | 14.2.0 |
-| fpm | 0.13.0 |
+| fpm | 0.13.0, alpha |
 | Python | 3.12 |
 
 ## Prerequisites
@@ -64,6 +64,17 @@ fpm run
 ```bash
 fpm test
 ```
+
+## Python Packages (pip)
+
+The following packages are installed via `pip` from `requirements.txt`:
+
+| Package | Version | Description |
+|---------|---------|-------------|
+| [fortls](https://github.com/fortran-lang/fortls) | 3.2.2 | Fortran Language Server — provides IDE features such as autocomplete, go-to-definition, and diagnostics |
+| [fprettify](https://github.com/pseewald/fprettify) | 0.3.7 | Fortran source code auto-formatter |
+| [fypp](https://github.com/aradi/fypp) | 3.2 | Fortran preprocessor supporting Python-like metaprogramming directives |
+| [findent](https://sourceforge.net/projects/findent/) | 4.3.6 | Fortran source code indenter and converter |
 
 ## VS Code Extensions
 
