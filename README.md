@@ -18,19 +18,21 @@ Configured as a VS Code Dev Container so you can start developing Fortran right 
 
 ## Setup
 
-### Using as your own repository
+### Getting started
+
+Clone this repository:
 
 ```bash
 git clone https://github.com/kiz0329/modernfortran-devcontainer-with-fpm.git
 cd modernfortran-devcontainer-with-fpm
 ```
 
-### Contributing to another's repository
+### Contributing to this repository
 
-1. **Fork** the repository on GitHub
+1. **Fork** this repository on GitHub
 2. Clone your forked repository
    ```bash
-   git clone <your-fork-url>
+   git clone https://github.com/<your-username>/modernfortran-devcontainer-with-fpm.git
    cd modernfortran-devcontainer-with-fpm
    ```
 3. Add the upstream repository as a remote
