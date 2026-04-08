@@ -67,6 +67,8 @@ fpm test
 - `author`
 - `maintainer`
 
+For manifest details, see https://fpm.fortran-lang.org//spec/manifest.html .
+
 ## Python Packages (pip)
 
 The following packages are installed via `pip` from `requirements.txt`:
