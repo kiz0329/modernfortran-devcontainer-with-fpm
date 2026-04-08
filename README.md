@@ -1,7 +1,7 @@
 # Modernfortran Devcontainer With Fpm
 
 A Fortran development environment using gfortran and fpm (Fortran Package Manager).  
-Configured as a VS Code Dev Container so you can start developing Fortran right away.
+This repository is already initialized as an fpm project and ready to build in a VS Code Dev Container.
 
 ## Development Environment
 
@@ -18,22 +18,32 @@ Configured as a VS Code Dev Container so you can start developing Fortran right 
 
 ## Setup
 
-1. Click **Use this template** → **Create a new repository** on GitHub
+1. Click **Use this template** -> **Create a new repository** on GitHub
 2. Clone your new repository
    ```bash
    git clone https://github.com/<your-username>/<your-repo-name>.git
    cd <your-repo-name>
    ```
 3. Open the folder in VS Code and select "Reopen in Container"
-4. Once the container build completes, the development environment is ready to use
+4. Once the container build completes, the development environment is ready
+
+## Project Layout
+
+This repository already contains the standard fpm structure:
+
+```text
+.
+|- fpm.toml
+|- app/main.f90
+|- src/example.f90
+|- test/check.f90
+```
+
+- `app/main.f90`: entry point executable
+- `src/example.f90`: library module
+- `test/check.f90`: test program scaffold
 
 ## Usage
-
-### Initialize fpm in your repository
-
-```bash
-fpm new --backfill <your-project-name>
-```
 
 ### Build and run
 
@@ -48,23 +58,32 @@ fpm run
 fpm test
 ```
 
+### Update Package Metadata
+
+`fpm.toml` currently contains placeholder values. Replace them with your project information:
+
+- `name`
+- `license`
+- `author`
+- `maintainer`
+
 ## Python Packages (pip)
 
 The following packages are installed via `pip` from `requirements.txt`:
 
 | Package | Version | Description |
 |---------|---------|-------------|
-| [fortls](https://github.com/fortran-lang/fortls) | 3.2.2 | Fortran Language Server — provides IDE features such as autocomplete, go-to-definition, and diagnostics |
-| [fprettify](https://github.com/pseewald/fprettify) | 0.3.7 | Fortran source code auto-formatter |
-| [fypp](https://github.com/aradi/fypp) | 3.2 | Fortran preprocessor supporting Python-like metaprogramming directives |
+| [fortls](https://github.com/fortran-lang/fortls) | 3.2.2 | Fortran Language Server for autocomplete, go-to-definition, and diagnostics |
+| [fprettify](https://github.com/pseewald/fprettify) | 0.3.7 | Fortran source code formatter |
+| [fypp](https://github.com/aradi/fypp) | 3.2 | Fortran preprocessor with Python-like metaprogramming directives |
 | [findent](https://sourceforge.net/projects/findent/) | 4.3.6 | Fortran source code indenter and converter |
 
 ## VS Code Extensions
 
 The following extensions are automatically installed in the container:
 
-- **Modern Fortran** (`fortran-lang.linter-gfortran`) — Syntax highlighting, linter, formatter
-- **Even Better TOML** (`tamasfe.even-better-toml`) — Editing support for fpm.toml
+- **Modern Fortran** (`fortran-lang.linter-gfortran`) - syntax highlighting, linting, and formatting
+- **Even Better TOML** (`tamasfe.even-better-toml`) - TOML editing support for `fpm.toml`
 
 ## License
 
