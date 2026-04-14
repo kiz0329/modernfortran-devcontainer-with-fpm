@@ -24,6 +24,9 @@
         "fortran.linter.modOutput": "${workspaceFolder}/.modernfortran/lintermod",
         "fortran.linter.extraArgs": ["-Wall", "-Wextra"],
         "fortran.linter.compilerPath": "",
+        "fortran.linter.fypp.enabled": true,
+        "fortran.formatting.formatter": "fprettify",
+        "fortran.notifications.releaseNotes": false,
         "fortran.fortls.configure": "${workspaceFolder}/.modernfortran/fortls/config.json"
       }
     }
