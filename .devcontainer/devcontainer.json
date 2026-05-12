@@ -26,6 +26,7 @@
         "fortran.linter.extraArgs": ["-Wall", "-Wextra"],
         "fortran.linter.compilerPath": "",
         "fortran.linter.fypp.enabled": true,
+        "fortran.linter.includePaths": ["${workspaceFolder}/build/*"],
         "fortran.formatting.formatter": "fprettify",
         "fortran.notifications.releaseNotes": false,
         "fortran.fortls.configure": "${workspaceFolder}/.modernfortran/fortls/config.json"

@@ -12,6 +12,17 @@
    "excl_suffixes": [],
    "excl_paths": [],
 
+   "excludeDirectories": [
+        "build/**",
+        "/build/",
+        "/build/**",
+        "build/",
+        "build",
+        "build/dependencies/**",
+        "/build/dependencies/**",
+        "/build/dependencies/"
+    ],
+
    "autocomplete_no_prefix": false,
    "autocomplete_no_snippets": false,
    "autocomplete_name_only": false,
